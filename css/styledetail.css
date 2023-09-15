@@ -1,0 +1,105 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+.product-detail {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  place-content: center;
+  background-color: #010101;
+}
+.kotak-modal {
+  background-color: #b6895b;
+  width: 700px;
+  height: 160px;
+
+  display: flex;
+  gap: 5px;
+}
+.gambar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: visible;
+  position: middle;
+
+  /* border: 1px solid black; */
+}
+.gambar img {
+  width: 100%;
+  height: 100%;
+}
+.kotak-text {
+  width: 70%;
+  height: 90%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: rgb(24, 255, 255);
+  padding: 4px;
+  width: 500px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-size: 10px;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  .kotak-modal {
+    padding: 10px;
+    background-color: #b6895b;
+    width: 300px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gambar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 1px solid black; */
+  }
+  .gambar img {
+    width: 100%;
+  }
+  .kotak-text {
+    flex: 1;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    background-color: aqua;
+    padding: 3px 0;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
